@@ -32,11 +32,29 @@ function Start-TokenRefreshJob {
 # Start the background job to refresh the token
 Start-TokenRefreshJob
 
+
+
 # Function to get the current access token
 function Get-CurrentAccessToken {
     $global:accessToken = Get-Content -Path $env:TEMP\PowerBI_AccessToken.txt
     return $global:accessToken
 }
+
+
+Get-CurrentAccessToken
+
+
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+########################################## SCRIPT GOES HERE - Get-CurrentAccessToken Pulls the Current Bearer Token  ##################################################
+
+
+
 
 # Stop the background job after script completion
 Stop-Job -Name "TokenRefreshJob"
